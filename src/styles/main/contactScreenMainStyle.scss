@@ -1,0 +1,204 @@
+@import "../../utils/styles/globalStyle";
+@import "../../utils/styles/textStyle";
+@import "../../utils/styles/scrollTo";
+
+.contactScreenMain {
+  .mobile {
+    box-sizing: border-box;
+    background-color: $colorCream;
+    .divTitle {
+      position: relative;
+      overflow: hidden;
+      .mobileTextBackground#contactScreenMainMobileTextBackground {
+        margin-left: -16%;
+        position: absolute;
+        user-select: none;
+      }
+      .textContent {
+        left: 8%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-16%);
+      }
+    }
+    .divWhatsAppList {
+      margin-top: 1.32em;
+      .whatsAppItem {
+        padding: 0 8%;
+        box-sizing: border-box;
+        &:hover {
+          opacity: .5;
+          transition: opacity 150ms linear;
+        }
+        transition: opacity 150ms linear;
+        user-select: none;
+        margin-top: 1em;
+        position: relative;
+        $iconSize: 1.32em;
+        .icon {
+          fill: rgba(0, 0, 0, .7);
+          top: 50%;
+          transform: translateY(-50%);
+          position: absolute;
+          float: left;
+          height: $iconSize;
+          width: $iconSize;
+        }
+        $marginLeft: $iconSize + 1.32em;
+        .textContent {
+          margin-left: $marginLeft;
+          float: left;
+          .name {
+            font-size: 1.16em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+          }
+          .mobileBody {
+            margin-top: .32em;
+          }
+        }
+      }
+    }
+    .divInstagramList {
+      margin-top: 2em;
+      .instagramItem {
+        padding: 0 8%;
+        box-sizing: border-box;
+        &:hover {
+          opacity: .5;
+          transition: opacity 150ms linear;
+        }
+        &:first-child {
+          margin-top: 1em;
+        }
+        user-select: none;
+        transition: opacity 150ms linear;
+        margin-top: .64em;
+        display: flex;
+        $iconSize: 1.32em;
+        .icon {
+          height: $iconSize;
+          width: $iconSize;
+          opacity: .7;
+        }
+        $marginLeft: $iconSize;
+        .mobileBody {
+          margin-left: $marginLeft;
+        }
+      }
+    }
+    .horizontalLine {
+      margin: 2em 8% 0;
+      background-color: rgba(0, 0, 0, .08);
+      height: .08em;
+      width: 84%;
+    }
+    .divCopyright {
+      padding: 2em 8%;
+      box-sizing: border-box;
+      text-align: center;
+      p {
+        font-size: .84em;
+        color: rgba(0, 0, 0, .64);
+      }
+    }
+  }
+  .desktop {
+    background-color: $colorCream;
+    .divTitle {
+      position: relative;
+      overflow: hidden;
+      .desktopTextBackground#contactScreenMainDesktopTextBackground {
+        right: 0;
+        position: absolute;
+      }
+      .textContent {
+        left: 8%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-16%);
+      }
+    }
+    .divContent {
+      display: flex;
+      padding: 1em 8% 4em;
+      box-sizing: border-box;
+      .divWhatsAppList {
+        .whatsAppItem {
+          &:hover {
+            opacity: .5;
+            transition: opacity 150ms linear;
+          }
+          transition: opacity 150ms linear;
+          user-select: none;
+          margin-top: 1em;
+          position: relative;
+          width: fit-content;
+          $iconSize: 1.32em;
+          .icon {
+            fill: rgba(0, 0, 0, .7);
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            float: left;
+            height: $iconSize;
+            width: $iconSize;
+          }
+          $marginLeft: $iconSize + 1.32em;
+          .textContent {
+            margin-left: $marginLeft;
+            float: left;
+            .name {
+              font-size: 1.16em;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 600;
+            }
+            .desktopBody {
+              margin-top: .32em;
+            }
+          }
+        }
+      }
+      .divInstagramList {
+        margin-left: 3.2em;
+        .instagramItem {
+          &:hover {
+            opacity: .5;
+            transition: opacity 150ms linear;
+          }
+          &:first-child {
+            margin-top: 1em;
+          }
+          user-select: none;
+          transition: opacity 150ms linear;
+          margin-top: .64em;
+          display: flex;
+          $iconSize: 1.32em;
+          .icon {
+            height: $iconSize;
+            width: $iconSize;
+            opacity: .7;
+          }
+          $marginLeft: $iconSize;
+          .desktopBody {
+            margin-left: $marginLeft;
+          }
+        }
+      }
+    }
+    .horizontalLine {
+      margin: 0 8%;
+      background-color: rgba(0, 0, 0, .08);
+      height: .12em;
+      width: 84%;
+    }
+    .divCopyright {
+      padding: 2em 0;
+      box-sizing: border-box;
+      text-align: center;
+      p {
+        color: rgba(0, 0, 0, .64);
+      }
+    }
+  }
+}

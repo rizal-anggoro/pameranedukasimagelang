@@ -1,0 +1,235 @@
+@import "../../utils/styles/globalStyle";
+@import "../../utils/styles/textStyle";
+
+.listItemContentDetail {
+  .footerCopyright {
+    padding-top: 1em;
+    box-sizing: border-box;
+    background-color: #f6f1ee;
+    .horizontalLine {
+      background-color: rgba(0, 0, 0, .08);
+      height: .08em;
+      width: 84%;
+      margin-left: 8%;
+    }
+    .divCopyright {
+      text-align: center;
+      box-sizing: border-box;
+      padding: 2em 8%;
+      p {
+        text-align: center;
+        color: rgba(0, 0, 0, .64);
+      }
+    }
+  }
+  .footerMail {
+    background-color: #F6F1EE;
+    .divMail {
+      width: fit-content;
+      padding: .64em 8%;
+      box-sizing: border-box;
+      display: flex;
+      &:hover {
+        opacity: .5;
+        transition: opacity 150ms linear;
+      }
+      transition: opacity 150ms linear;
+      user-select: none;
+      position: relative;
+      $iconSize: 1.32em;
+      .divIcon {
+        text-align: center;
+        .icon {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          stroke: rgba(0, 0, 0, .7);
+          fill: none;
+          stroke-width: 2;
+          height: $iconSize;
+          width: $iconSize;
+        }
+      }
+      $marginLeft: $iconSize;
+      .divText {
+        margin-left: $marginLeft;
+        .textContent {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          .desktopBody {
+          }
+        }
+      }
+    }
+  }
+  .footerWhatsApp {
+    background-color: #F6F1EE;
+    .divWhatsApp {
+      width: fit-content;
+      padding: .64em 8%;
+      box-sizing: border-box;
+      display: flex;
+      &:hover {
+        opacity: .5;
+        transition: opacity 150ms linear;
+      }
+      transition: opacity 150ms linear;
+      user-select: none;
+      position: relative;
+      $iconSize: 1.32em;
+      .divIcon {
+        text-align: center;
+        .icon {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          fill: rgba(0, 0, 0, .7);
+          height: $iconSize;
+          width: $iconSize;
+        }
+      }
+      $marginLeft: $iconSize;
+      .divText {
+        margin-left: $marginLeft;
+        .textContent {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          .name {
+            color: rgba(0, 0, 0, .8);
+            font-size: 1.16em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+          }
+          .desktopBody {
+            margin-top: .32em;
+          }
+        }
+      }
+    }
+  }
+  .scrollToId {
+    height: $desktopAppBarHeight;
+    width: 100%;
+    background-color: red;
+    visibility: hidden;
+    position: absolute;
+    margin-top: -$desktopAppBarHeight;
+  }
+  .listItemWithIndex {
+    padding: 0 8%;
+    box-sizing: border-box;
+    display: flex;
+    .div0 {
+      p {
+        width: 1em;
+      }
+    }
+    .div1 {
+      margin-left: 2em;
+      flex: 1;
+      .desktopBody {
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+      }
+    }
+  }
+  .imageWithTitleAndBody {
+    padding: 0 8%;
+    box-sizing: border-box;
+    .divImage {
+      img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .divContent {
+      .mobileSubtitle {
+        margin-top: 1em;
+      }
+      .mobileBody {
+        margin-top: .64em;
+      }
+    }
+  }
+  .bigImage {
+    $bigImageMargin: 0%;
+    img {
+      height: 32vh;
+      margin: 0 $bigImageMargin;
+      object-position: bottom;
+      object-fit: cover;
+      width: (100% - (2 * $bigImageMargin));
+    }
+  }
+  .logoContent {
+    margin: 4em 0;
+    padding: 0 8%;
+    box-sizing: border-box;
+    .topSide {
+      img {
+        max-width: 100%;
+        height: 6em;
+      }
+    }
+    .bottomSide {
+      .mobileHeading {
+        margin-top: 1em;
+      }
+      .mobileBody {
+        margin-top: .64em;
+      }
+    }
+  }
+  .horizontalLine {
+    background-color: rgba(0, 0, 0, .08);
+    height: .04em;
+    width: 84%;
+    margin-left: 8%;
+  }
+  .heading, .title, .subtitle, .body, .oneImage, .threeImages {
+    padding: 0 8%;
+    box-sizing: border-box;
+  }
+  .textBackground {
+    position: relative;
+    overflow: hidden;
+    #listItemContentDetailMobileTextBackground, #listItemContentDetailMobileFooterTitle {
+      right: 0;
+      margin-right: 8%;
+      position: absolute;
+    }
+    .mobileHeading {
+      left: 8%;
+      right: 8%;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-16%);
+    }
+  }
+  .oneImage {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .threeImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    $spacerSize: 1%;
+    $imageWidth: (100% - (2 * $spacerSize)) / 3;
+    img {
+      height: 8em;
+      width: $imageWidth;
+      object-fit: cover;
+      margin-left: $spacerSize;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

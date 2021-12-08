@@ -1,0 +1,83 @@
+@import "globalStyle";
+
+/* mobile */
+.mobileTextBackground {
+  user-select: none;
+  font-family: 'Playfair Display', sans-serif;
+  color: black;
+  opacity: .04;
+  font-weight: bold;
+  font-size: 12em;
+}
+.mobileHeading {
+  color: $colorDarkGreen;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: bold;
+  font-size: 2.4em;
+}
+.mobileSubheading {
+  color: $colorDarkGreen;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+.mobileTitle {
+  font-weight: 600;
+  font-size: 1.6em;
+  line-height: 1.32em;
+  font-family: 'Poppins', sans-serif;
+}
+.mobileSubtitle {
+  line-height: 1.32em;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 1.32em;
+}
+.mobileBody {
+  font-size: 1em;
+  color: rgba(0, 0, 0, .8);
+  line-height: 1.32em;
+}
+
+/* desktop */
+.desktopTextBackground {
+  user-select: none;
+  font-family: 'Playfair Display', sans-serif;
+  color: black;
+  opacity: .04;
+  font-weight: bold;
+  font-size: 16em;
+}
+.desktopHeading {
+  font-weight: bold;
+  font-size: 4em;
+  color: $colorDarkGreen;
+  font-family: 'Playfair Display', sans-serif;
+}
+.desktopSubheading {
+}
+.desktopTitle {
+  font-weight: 600;
+  line-height: 1.32em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4em;
+}
+.desktopSubtitle {
+  line-height: 1.32em;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+.desktopBody {
+  color: rgba(0, 0, 0, .8);
+  line-height: 1.32em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.16em;
+}
+
+/* both */
+.hidden {
+  visibility: hidden;
+}

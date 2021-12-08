@@ -1,0 +1,18 @@
+@import "../../utils/styles/textStyle";
+@import "../../utils/styles/globalStyle";
+
+.contentScreenDetail {
+  .mobile {
+
+  }
+  .desktop {
+    .root {
+      background-color: $colorCream;
+      box-sizing: border-box;
+      padding: 0 8% 4em;
+      .desktopBody {
+        text-align: justify;
+      }
+    }
+  }
+}

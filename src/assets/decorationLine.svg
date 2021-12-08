@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="328.805" height="328.805" viewBox="0 0 328.805 328.805">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="400" height="65" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="decorationLine" transform="translate(0 282.843) rotate(-45)" clip-path="url(#clip-path)">
+    <g transform="translate(-905.5 -1237.5)">
+      <line id="Line_2" data-name="Line 2" x2="400" transform="translate(905.5 1241.5)" fill="none" stroke="#dfab5f" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="translate(-685.5 -1237.5)">
+      <line id="Line_2-2" data-name="Line 2" x2="400" transform="translate(905.5 1241.5)" fill="none" stroke="#dfab5f" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="translate(-905.5 -1209.5)">
+      <line id="Line_2-3" data-name="Line 2" x2="400" transform="translate(905.5 1241.5)" fill="none" stroke="#dfab5f" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="translate(-685.5 -1209.5)">
+      <line id="Line_2-4" data-name="Line 2" x2="400" transform="translate(905.5 1241.5)" fill="none" stroke="#dfab5f" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="translate(-905.5 -1181.5)">
+      <line id="Line_2-5" data-name="Line 2" x2="400" transform="translate(905.5 1241.5)" fill="none" stroke="#dfab5f" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="translate(-685.5 -1181.5)">
+      <line id="Line_2-6" data-name="Line 2" x2="400" transform="translate(905.5 1241.5)" fill="none" stroke="#dfab5f" stroke-linecap="round" stroke-width="8"/>
+    </g>
+  </g>
+</svg>

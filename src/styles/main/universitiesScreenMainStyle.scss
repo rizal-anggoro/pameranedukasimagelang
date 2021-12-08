@@ -1,0 +1,195 @@
+@import "../../utils/styles/globalStyle";
+@import "../../utils/styles/textStyle";
+@import "../../utils/styles/buttonStyle";
+@import "../../utils/styles/scrollTo";
+
+.universitiesScreenMain {
+  .mobile {
+    .divTitle {
+      position: relative;
+      overflow: hidden;
+      .mobileTextBackground#universitiesScreenMainMobileTextBackground {
+        margin-left: -16%;
+        position: absolute;
+      }
+      .mobileSubheading {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-16%);
+        margin: 0 8%;
+      }
+    }
+    .listUniversities {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      $listItemWidth: 100% / 1.32;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .listItem {
+        margin-bottom: 1em;
+        margin-top: 2em;
+        background-color: $colorCream;
+        width: $listItemWidth;
+        display: inline-block;
+        margin-left: 1.32em;
+        transition: box-shadow 250ms linear;
+        &:first-child {
+          margin-left: 8%;
+        }
+        &:last-child {
+          margin-right: 8%;
+        }
+        &:hover {
+          box-shadow: 0 0 1em $colorCream /*rgba(0, 0, 0, .16)*/;
+          transition: box-shadow 250ms linear;
+        }
+        .divImage {
+          height: 12em;
+          .image {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            object-fit: contain;
+            width: 100%;
+            height: 8em;
+          }
+        }
+        .divText {
+          padding: 1.32em 1.32em;
+          box-sizing: border-box;
+          white-space: normal;
+          .divSubtitle {
+            display: flex;
+            flex-direction: column;
+            $minHeight: (1.32em * 2) + .824em;
+            min-height: $minHeight;
+            .divider {
+              flex: 1;
+            }
+          }
+          .mobileBody {
+            margin-top: .32em;
+          }
+        }
+      }
+    }
+    .mobileOutlineButton {
+      margin: 1.32em 8% 3.2em;
+    }
+  }
+  .desktop {
+    .divTitle {
+      position: relative;
+      overflow: hidden;
+      .desktopTextBackground#universitiesScreenMainDesktopTextBackground {
+        margin-left: 24%;
+        position: absolute;
+      }
+      .desktopHeading#universitiesScreenMainDesktopTitle {
+        left: 8%;
+        right: 8%;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-16%);
+      }
+    }
+    .universities {
+      position: relative;
+      .divButtonScroll {
+        z-index: 1;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        img {
+          box-shadow: 0 0 1em rgba(0, 0, 0, .16);
+          position: absolute;
+          background-color: $colorAmber;
+          padding: 1em;
+          box-sizing: border-box;
+          transition: opacity 250ms linear;
+        }
+        .buttonScrollLeft {
+          left: 0;
+          margin-left: 4%;
+        }
+        .buttonScrollLeft.buttonScrollLeftHidden {
+          opacity: 0;
+          transition: opacity 250ms linear;
+        }
+        .buttonScrollRight {
+          right: 0;
+          margin-right: 4%;
+        }
+        .buttonScrollRight.buttonScrollRightHidden {
+          opacity: 0;
+          transition: opacity 250ms linear;
+        }
+      }
+      .listUniversities {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: block;
+        $listItemWidth: 100% / 3;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .listItem {
+          vertical-align: top;
+          margin-bottom: 1em;
+          margin-top: 2em;
+          background-color: $colorCream;
+          width: $listItemWidth;
+          display: inline-block;
+          margin-left: 1.32em;
+          transition: box-shadow 250ms linear;
+          &:first-child {
+            margin-left: 8%;
+          }
+          &:last-child {
+            margin-right: 8%;
+          }
+          &:hover {
+            box-shadow: 0 0 1em $colorCream /*rgba(0, 0, 0, .16)*/;
+            transition: box-shadow 250ms linear;
+          }
+          .divImage {
+            height: 16em;
+            .image {
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              object-fit: contain;
+              width: 100%;
+              height: 12em;
+            }
+          }
+          .divText {
+            /*height: 12.48em;*/
+            padding: 2em 2em;
+            box-sizing: border-box;
+            white-space: normal;
+            .divSubtitle {
+              display: flex;
+              flex-direction: column;
+              $minHeightSubtitle: (1.6em * 2) + 1em;
+              min-height: $minHeightSubtitle;
+              .divider {
+                flex: 1;
+              }
+            }
+            .desktopBody {
+              margin-top: .64em;
+            }
+          }
+        }
+      }
+    }
+    .desktopOutlineButton#universitiesScreenMainButtonViewMore {
+      margin: 2em 8% 8%;
+    }
+  }
+}

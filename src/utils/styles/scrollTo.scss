@@ -1,0 +1,14 @@
+@import "globalStyle";
+
+.mobileScrollTo {
+  visibility: hidden;
+  position: absolute;
+  margin-top: -$mobileAppBarHeight;
+  height: $mobileAppBarHeight;
+}
+.desktopScrollTo {
+  visibility: hidden;
+  position: absolute;
+  margin-top: -$desktopAppBarHeight;
+  height: $desktopAppBarHeight;
+}

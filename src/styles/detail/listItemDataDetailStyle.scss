@@ -1,0 +1,260 @@
+@import "../../utils/styles/globalStyle";
+@import "../../utils/styles/textStyle";
+
+.listItemContentDetail {
+  .desktop {
+    display: flex;
+    .divIndex {
+      border-top: 1.16px solid rgba(0, 0, 0, .32);
+      background-color: rgba(0, 0, 0, .08);
+      width: 50px;
+      text-align: center;
+      p {
+        user-select: none;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .divComponents {
+      overflow: hidden;
+      flex: 1;
+      .footerCopyright {
+        padding-top: 1em;
+        box-sizing: border-box;
+        background-color: #f6f1ee;
+        .horizontalLine {
+          background-color: rgba(0, 0, 0, .08);
+          height: .08em;
+          width: 84%;
+          margin-left: 8%;
+        }
+        .divCopyright {
+          text-align: center;
+          box-sizing: border-box;
+          padding: 2em 8%;
+          p {
+            text-align: center;
+            color: rgba(0, 0, 0, .64);
+          }
+        }
+      }
+      .footerMail {
+        background-color: #F6F1EE;
+        .divMail {
+          width: fit-content;
+          padding: .64em 8%;
+          box-sizing: border-box;
+          display: flex;
+          &:hover {
+            opacity: .5;
+            transition: opacity 150ms linear;
+          }
+          transition: opacity 150ms linear;
+          user-select: none;
+          position: relative;
+          $iconSize: 1.32em;
+          .divIcon {
+            text-align: center;
+            .icon {
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              stroke: rgba(0, 0, 0, .7);
+              fill: none;
+              stroke-width: 2;
+              height: $iconSize;
+              width: $iconSize;
+            }
+          }
+          $marginLeft: $iconSize;
+          .divText {
+            margin-left: $marginLeft;
+            .textContent {
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              .desktopBody {
+              }
+            }
+          }
+        }
+      }
+      .footerWhatsApp {
+        background-color: #F6F1EE;
+        .divWhatsApp {
+          width: fit-content;
+          padding: .64em 8%;
+          box-sizing: border-box;
+          display: flex;
+          &:hover {
+            opacity: .5;
+            transition: opacity 150ms linear;
+          }
+          transition: opacity 150ms linear;
+          user-select: none;
+          position: relative;
+          $iconSize: 1.32em;
+          .divIcon {
+            text-align: center;
+            .icon {
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              fill: rgba(0, 0, 0, .7);
+              height: $iconSize;
+              width: $iconSize;
+            }
+          }
+          $marginLeft: $iconSize;
+          .divText {
+            margin-left: $marginLeft;
+            .textContent {
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              .name {
+                color: rgba(0, 0, 0, .8);
+                font-size: 1.16em;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+              }
+              .desktopBody {
+                margin-top: .32em;
+              }
+            }
+          }
+        }
+      }
+      .scrollToId {
+        height: $desktopAppBarHeight;
+        width: 100%;
+        background-color: red;
+        visibility: hidden;
+        position: absolute;
+        margin-top: -$desktopAppBarHeight;
+      }
+      .listItemWithIndex {
+        padding: 0 8%;
+        box-sizing: border-box;
+        display: flex;
+        .div1 {
+          margin-left: 2em;
+          flex: 1;
+          .desktopBody {
+            top: 50%;
+            transform: translateY(-50%);
+            position: relative;
+          }
+        }
+      }
+      .imageWithTitleAndBody {
+        display: flex;
+        .divImage {
+          img {
+            width: 24vw;
+            object-fit: cover;
+            object-position: center;
+            height: 16em;
+          }
+        }
+        .divContent {
+          .divText {
+            margin-left: 2em;
+            top: 50%;
+            transform: translateY(-50%);
+            position: relative;
+            .title {
+              font-weight: 500;
+            }
+            .subtitle {
+              margin-top: .64em;
+            }
+          }
+        }
+      }
+      .bigImage {
+        $bigImageMargin: 0%;
+        img {
+          margin: 0 $bigImageMargin;
+          object-position: bottom;
+          object-fit: cover;
+          height: 72vh;
+          width: (100% - (2 * $bigImageMargin));
+        }
+      }
+      .logoContent {
+        padding: 0 8%;
+        box-sizing: border-box;
+        display: flex;
+        .leftSide {
+          img {
+            height: 8em;
+          }
+        }
+        .rightSide {
+          margin-left: 3.2em;
+          flex: 1;
+          .divContent {
+            top: 50%;
+            transform: translateY(-50%);
+            position: relative;
+            height: fit-content;
+            .desktopBody {
+              margin-top: .64em;
+            }
+          }
+        }
+      }
+      .horizontalLine {
+        background-color: rgba(0, 0, 0, .08);
+        height: .08em;
+        width: 84%;
+        margin-left: 8%;
+      }
+      .heading, .title, .subtitle, .body, .oneImage, .threeImages {
+        padding: 0 8%;
+        box-sizing: border-box;
+      }
+      .textBackground {
+        position: relative;
+        overflow: hidden;
+        #listItemContentDetailDesktopTextBackground, #listItemContentDetailDesktopFooterTitle {
+          right: 0;
+          margin-right: 8%;
+          position: absolute;
+        }
+        .desktopHeading {
+          left: 8%;
+          right: 8%;
+          top: 50%;
+          position: absolute;
+          transform: translateY(-16%);
+        }
+      }
+      .oneImage {
+        img {
+          object-fit: cover;
+          height: 24em;
+          width: 100%;
+        }
+      }
+      .threeImages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        $spacerSize: 1%;
+        $imageWidth: (100% - (2 * $spacerSize)) / 3;
+        img {
+          height: 16em;
+          width: $imageWidth;
+          object-fit: cover;
+          margin-left: $spacerSize;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

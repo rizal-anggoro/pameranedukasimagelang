@@ -1,0 +1,95 @@
+@import "../../utils/styles/globalStyle";
+
+.appBarDetail {
+  .mobile {
+    .root {
+      display: flex;
+      background-color: white;
+      z-index: 2;
+      width: 100%;
+      height: $mobileAppBarHeight;
+      position: fixed;
+      box-shadow: 0 0 1em rgba(0, 0, 0, .08);
+      .logo {
+        margin-left: 8%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 56%;
+      }
+      .divTitle {
+        margin: 0 4%;
+        flex: 1;
+        p {
+          font-weight: 500;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .divMenu {
+        margin-right: 8%;
+        .feather-menu {
+          stroke: rgba(0, 0, 0, .8);
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: stroke 250ms linear;
+          &:hover {
+            transition: stroke 250ms linear;
+            stroke: rgba(0, 0, 0, .4);
+          }
+        }
+      }
+    }
+  }
+  .desktop {
+    .root {
+      box-shadow: 0 0 1em rgba(0, 0, 0, .08);
+      background-color: white;
+      display: flex;
+      z-index: 2;
+      position: fixed;
+      height: $desktopAppBarHeight;
+      width: 100%;
+      transition: background-color 250ms linear,
+      box-shadow 250ms linear;
+      .logo {
+        margin-left: 8%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 56%;
+      }
+      .divTitle {
+        margin-left: 2%;
+        text-align: left;
+        flex: 1;
+        .title {
+          font-family: 'Poppins', sans-serif;
+          font-weight: bold;
+          font-size: 1em;
+          color: rgba(0, 0, 0, .8);
+          transform: translateY(-50%);
+          top: 50%;
+          position: relative;
+        }
+      }
+      .divMenu {
+        margin-right: 8%;
+        height: 100%;
+        .menuIcon {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          stroke: rgba(0, 0, 0, .8);
+          transition: stroke 250ms linear;
+          &:hover {
+            transition: stroke 250ms linear;
+            stroke: rgba(0, 0, 0, .4);
+          }
+        }
+      }
+    }
+  }
+}

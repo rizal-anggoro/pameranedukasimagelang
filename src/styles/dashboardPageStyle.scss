@@ -1,0 +1,62 @@
+@import "../utils/styles/globalStyle";
+
+.dashboardPage {
+  .desktop {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    .leftSide {
+      flex: 1;
+      background-color: $colorDarkGreen;
+      .title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 1.6em;
+        margin: 1.32em 8% 1.32em;
+        color: white;
+      }
+      .horizontalLine {
+        margin: 0 8%;
+        background-color: rgba(255, 255, 255, .08);
+        height: .08em;
+        width: 100%;
+      }
+      .divNavigations {
+        margin: 1.32em 0;
+        .navigation {
+          p {
+            user-select: none;
+            padding: .64em 8%;
+            box-sizing: border-box;
+            font-size: 1.16em;
+          }
+          .selected {
+            background-color: rgba(255, 255, 255, .08);
+            color: white;
+            font-weight: 500;
+            transition: background-color 250ms linear,
+            color 250ms linear;
+          }
+          .unselected {
+            color: rgba(255, 255, 255, .4);
+            transition: background-color 250ms linear,
+            color 250ms linear;
+          }
+        }
+      }
+      .divVersion {
+        text-align: center;
+        margin: 1.32em 0;
+        .version {
+          font-size: .84em;
+          color: rgba(255, 255, 255, .4);
+        }
+      }
+    }
+    .rightSide {
+      flex: 4;
+      background-color: white;
+    }
+  }
+}

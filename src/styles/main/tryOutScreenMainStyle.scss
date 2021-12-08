@@ -1,0 +1,80 @@
+@import "../../utils/styles/globalStyle";
+@import "../../utils/styles/textStyle";
+
+.tryOutScreenMain {
+  .mobile {
+    .divTitle {
+      position: relative;
+      overflow: hidden;
+      .mobileTextBackground#tryOutScreenMainMobileTextBackground {
+        margin-left: -16%;
+        position: absolute;
+        user-select: none;
+      }
+      .textContent {
+        left: 8%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-4%);
+      }
+    }
+    .divContent {
+      box-sizing: border-box;
+      padding: 0 8% 3.2em;
+      .poster {
+        box-shadow: 0 0 1em rgba($colorAmber, .64);
+        margin-top: 2em;
+        width: 100%;
+        object-fit: contain;
+      }
+      .mobileTitle {
+        margin-top: 1em;
+      }
+      .mobileOutlineButton {
+        margin-top: 1em;
+      }
+    }
+  }
+  .desktop {
+    .textBackground {
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      #tryOutScreenMainDesktopTextBackground {
+        left: 0;
+        margin-left: -4%;
+        position: absolute;
+      }
+      .desktopHeading {
+        left: 8%;
+        right: 8%;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-16%);
+      }
+    }
+    .divContent {
+      display: flex;
+      padding: 2em 8% 4em;
+      box-sizing: border-box;
+      .leftSide {
+        img {
+          box-shadow: 0 0 1em rgba($colorAmber, .64);
+          max-height: 48vh;
+        }
+      }
+      .rightSide {
+        margin-left: 4%;
+        flex: 1;
+        .divText {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          .desktopOutlineButton {
+            margin-top: 1.32em;
+          }
+        }
+      }
+    }
+  }
+}

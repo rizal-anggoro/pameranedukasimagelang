@@ -1,0 +1,197 @@
+@import "../../utils/styles/globalStyle";
+@import "../../utils/styles/buttonStyle";
+@import "../../utils/styles/scrollTo";
+
+.welcomeSpeechScreenMain {
+  .mobile {
+    .divWelcomeSpeechVideo {
+      box-sizing: border-box;
+      padding: 3.2em 0;
+      overflow: hidden;
+      .divVideo {
+        position: relative;
+        margin: 0 8%;
+        .decorationLine {
+          height: 8em;
+          margin-left: -2em;
+          margin-top: -2em;
+          position: absolute;
+        }
+        .decorationBlob {
+          height: 8em;
+          bottom: 0;
+          right: 0;
+          margin-right: -2em;
+          margin-bottom: -2em;
+          position: absolute;
+        }
+        .videoPlayer {
+          width: 100%;
+          position: relative;
+        }
+      }
+    }
+    .divWelcomeSpeech {
+      position: relative;
+      overflow: hidden;
+      .textBackground {
+        padding-left: 8%;
+        box-sizing: border-box;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+      }
+      .listItemWelcomeSpeech {
+        width: 100%;
+        margin: 2em 0 3.2em;
+        .divImage {
+          $margin: 16%;
+          $imageWidth: 100% - (2 * $margin);
+          .image {
+            max-width: 100%;
+            margin: 0 $margin;
+            width: $imageWidth;
+          }
+        }
+        .divContent {
+          margin-top: 1em;
+          padding: 0 8%;
+          box-sizing: border-box;
+          .mobileBody#welcomeSpeechScreenMainMobileCaption {
+            color: rgba(0, 0, 0, .5);
+            margin-top: .32em;
+          }
+          .mobileBody {
+            margin-top: 1em;
+          }
+          .mobileOutlineButton {
+            margin-top: 1.32em;
+          }
+        }
+      }
+    }
+  }
+  .desktop {
+    $divVideoMargin: 16%;
+    $divVideoWidth: 100% - (2 * $divVideoMargin);
+    .divWelcomeSpeechVideo {
+      width: 100%;
+      padding: 8em 0;
+      box-sizing: border-box;
+      .divVideo {
+        position: relative;
+        margin: 0 $divVideoMargin;
+        background-color: $colorDarkGreen;
+        width: $divVideoWidth;
+        height: 32em;
+        .decorationLine {
+          z-index: 0;
+          height: 16em;
+          margin: -5.32em 0 0 -5.32em;
+          position: absolute;
+        }
+        .decorationBlob {
+          z-index: 0;
+          height: 16em;
+          bottom: 0;
+          right: 0;
+          margin: 0 -5.32em -5.32em 0;
+          position: absolute;
+        }
+        .videoPlayer {
+          outline: none;
+          user-focus: none;
+          background-color: $colorDarkGreen;
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 32em;
+        }
+      }
+    }
+    .rootWelcomeSpeech {
+      position: relative;
+      overflow: hidden;
+      .textBackground {
+        z-index: 1;
+        margin-top: -4em;
+        padding-left: 8%;
+        box-sizing: border-box;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        .desktopTextBackground {
+          font-size: 16em;
+        }
+      }
+      .divWelcomeSpeech {
+        width: 100%;
+        margin-top: 8em;
+        margin-bottom: 8em;
+        position: relative;
+        overflow: hidden;
+        .itemImageLeft {
+          display: flex;
+          width: 100%;
+          padding: 0 8%;
+          box-sizing: border-box;
+          .image {
+            width: auto;
+            height: 24em;
+          }
+          .rightSide {
+            margin-left: 4%;
+            .content {
+              z-index: 2;
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              .desktopBody#welcomeSpeechScreenMainDesktopCaption0 {
+                margin-top: .32em;
+                color: rgba(0, 0, 0, .5);
+              }
+              .desktopBody#welcomeSpeechScreenMainDesktopSubtitle0 {
+                margin-top: 1.32em;
+                text-align: justify;
+              }
+              .desktopOutlineButton#welcomeSpeechScreenMainDesktopButtonReadMore0 {
+                margin-top: 2em;
+              }
+            }
+          }
+        }
+        .itemImageRight {
+          margin-top: 2em;
+          display: flex;
+          width: 100%;
+          padding: 0 8%;
+          box-sizing: border-box;
+          .leftSide {
+            margin-right: 4%;
+            .content {
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              .desktopBody#welcomeSpeechScreenMainDesktopCaption1 {
+                margin-top: .32em;
+                color: rgba(0, 0, 0, .5);
+              }
+              .desktopBody#welcomeSpeechScreenMainDesktopSubtitle1 {
+                margin-top: 1.32em;
+              }
+              .desktopOutlineButton#welcomeSpeechScreenMainDesktopButtonReadMore1 {
+                margin-top: 2em;
+              }
+            }
+          }
+          .rightSide {
+            flex: 1;
+            .image {
+              height: 24em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

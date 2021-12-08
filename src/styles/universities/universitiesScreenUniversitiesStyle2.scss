@@ -1,0 +1,290 @@
+@import "../../utils/styles/globalStyle";
+
+.universitiesScreenUniversities {
+  .mobile {
+    .divNotFound {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .imageNotFound {
+        max-width: 100%;
+        height: 24vh;
+      }
+      .mobileTitle {
+        margin-top: 1em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 2.4em;
+      }
+      .mobileBody {
+        margin: .64em 8% 0;
+      }
+    }
+    .divTitle {
+      position: relative;
+      overflow: hidden;
+      .textBackground {
+        margin-left: -16%;
+        position: absolute;
+        user-select: none;
+        font-size: 12em;
+        font-weight: bold;
+        color: black;
+        opacity: .04;
+        font-family: 'Playfair Display', sans-serif;
+      }
+      .textBackgroundHidden {
+        user-select: none;
+        font-size: 12em;
+        font-weight: bold;
+        font-family: 'Playfair Display', sans-serif;
+        visibility: hidden;
+      }
+      .title {
+        margin:  0 8%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-32%);
+        font-size: 2em;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: bold;
+        color: $colorDarkGreen;
+      }
+    }
+    .listUniversitiesMobile {
+      margin-top: 1.32em;
+      .listItemMobile {
+        box-sizing: border-box;
+        margin: 0 8% 1.32em;
+        background-color: $colorCream;
+        transition: box-shadow 250ms linear;
+        &:last-child {
+          margin-bottom: 2em;
+        }
+        &:hover {
+          box-shadow: 0 0 1em rgba(0, 0, 0, .16);
+          transition: box-shadow 250ms linear;
+        }
+        .divListItemImage {
+          height: 12em;
+          width: 100%;
+          .imageMobile {
+            margin: 0;
+            width: 100%;
+            object-fit: cover;
+            height: 12em;
+          }
+        }
+        .divContentMobile {
+          padding: 1.32em;
+          box-sizing: border-box;
+          .listItemTitle {
+            margin: 0;
+            font-size: 1.32em;
+            font-weight: bold;
+            font-family: 'Playfair Display', sans-serif;
+          }
+          .listItemSubtitle {
+            color: rgba(0, 0, 0, .8);
+            margin-top: .64em;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1em;
+            line-height: 1.32em;
+          }
+        }
+      }
+    }
+    .divIndex {
+      margin: 3.2em 8% 4em;
+      display: flex;
+      .divider {
+        flex: 1;
+      }
+      p {
+        user-select: none;
+        padding: .32em .64em;
+        box-sizing: border-box;
+      }
+      .selected {
+        color: white;
+        background-color: $colorDarkGreen;
+      }
+      .unselected {
+        transition: color 150ms linear;
+        &:hover {
+          transition: color 150ms linear;
+          color: rgba(0, 0, 0, .4);
+        }
+      }
+    }
+  }
+  .desktop {
+    .divNotFound {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .imageNotFound {
+        height: 32vh;
+      }
+      .title {
+        margin-top: 1em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 3.2em;
+      }
+      .desktopBody {
+        margin-top: .64em;
+      }
+    }
+    .divTitle {
+      margin-top: 2em;
+      position: relative;
+      overflow: hidden;
+      .textBackground {
+        top: 0;
+        margin-left: 24%;
+        position: absolute;
+        user-select: none;
+        font-size: 16em;
+        font-weight: bold;
+        color: black;
+        opacity: .04;
+        font-family: 'Playfair Display', sans-serif;
+      }
+      .textBackgroundHidden {
+        user-select: none;
+        font-size: 16em;
+        font-weight: bold;
+        font-family: 'Playfair Display', sans-serif;
+        visibility: hidden;
+      }
+      .title {
+        left: 8%;
+        right: 8%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-16%);
+        font-size: 4em;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: bold;
+        color: $colorDarkGreen;
+      }
+    }
+    .listUniversities {
+      margin-top: 4em;
+      .listItem {
+        background-color: $colorCream;
+        display: flex;
+        margin: 1em 8% 0;
+        transition: box-shadow 250ms linear;
+        &:last-child {
+          margin-bottom: 2em;
+        }
+        &:hover {
+          box-shadow: 0 0 1em rgba(0, 0, 0, .16);
+          transition: box-shadow 250ms linear;
+        }
+        .divImage {
+          height: 16em;
+          flex: 1;
+          .image {
+            object-fit: cover;
+            height: 16em;
+          }
+        }
+        .divContent {
+          padding: 0 4em 0 2em;
+          .content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            .title {
+              font-size: 1.64em;
+              font-weight: bold;
+              font-family: 'Playfair Display', sans-serif;
+            }
+            .subtitle {
+              color: rgba(0, 0, 0, .8);
+              margin-top: 1em;
+              font-family: 'Roboto', sans-serif;
+              font-size: 1em;
+              line-height: 1.32em;
+            }
+            .buttonShowDetail {
+              margin-top: 2em;
+              padding: 1em 2em;
+              font-size: .932em;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 500;
+              user-select: none;
+              color: white;
+              width: fit-content;
+              background-color: $colorDarkGreen;
+              box-sizing: border-box;
+              border: .16em solid $colorDarkGreen;
+              transition: background-color 250ms linear,
+              color 250ms linear;
+              &:hover {
+                border: .16em solid $colorDarkGreen;
+                background-color: rgba(0, 0, 0, 0);
+                padding: 1em 2em;
+                font-size: .932em;
+                box-sizing: border-box;
+                color: $colorDarkGreen;
+                transition: background-color 250ms linear,
+                color 250ms linear;
+              }
+            }
+          }
+        }
+      }
+    }
+    .divIndex {
+      margin: 3.2em 8% 4em;
+      display: flex;
+      .divider {
+        flex: 1;
+      }
+      p {
+        user-select: none;
+        padding: .32em .64em;
+        box-sizing: border-box;
+      }
+      .selected {
+        color: white;
+        background-color: $colorDarkGreen;
+      }
+      .unselected {
+        transition: color 150ms linear;
+        &:hover {
+          transition: color 150ms linear;
+          color: rgba(0, 0, 0, .4);
+        }
+      }
+    }
+    .divButtonScrollDown {
+      bottom: 0;
+      right: 0;
+      position: fixed;
+      height: $desktopAppBarHeight;
+      width: $desktopAppBarHeight;
+      background-color: $colorAmber;
+      text-align: center;
+      transition: box-shadow 250ms linear;
+      &:hover {
+        transition: box-shadow 250ms linear;
+        box-shadow: 0 0 1em rgba(0, 0, 0, .16);
+      }
+      .buttonScrollDown {
+        stroke: $colorDarkAmber;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

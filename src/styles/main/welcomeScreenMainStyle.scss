@@ -1,0 +1,80 @@
+@import "../../utils/styles/globalStyle";
+@import "../../utils/styles/buttonStyle";
+@import "../../utils/styles/textStyle";
+
+.welcomeScreenMain {
+  .welcomeScreenMainMobile {
+    .root.rootOverflowed {
+      height: fit-content;
+    }
+    .root {
+      overflow-x: hidden;
+      padding-top: $mobileAppBarHeight;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100vh;
+      background-color: $colorCream;
+      $paddingImage: 2.4em;
+      .divImage {
+        box-sizing: border-box;
+        padding-top: $paddingImage;
+        height: fit-content;
+        $margin: 16%;
+        $imageWidth: 100% - (2 * $margin);
+        .image {
+          max-width: 100%;
+          margin: 0 $margin;
+          width: $imageWidth;
+        }
+      }
+      .divContent {
+        background-color: $colorCream;
+        padding: $paddingImage 8% 3.2em;
+        box-sizing: border-box;
+        .content {
+          .mobileBody#welcomeScreenMainMobileSubtitle {
+            margin-top: 1.32em;
+          }
+          .mobileFillButton#welcomeScreenMainMobileButtonExplore {
+            margin-top: 1.32em;
+          }
+        }
+      }
+    }
+  }
+  .welcomeScreenMainDesktop {
+    .root {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      background-color: $colorCream;
+      .welcomeScreenMainLeftSide {
+        margin-left: 8%;
+        flex: 1;
+        .content {
+          text-align: left;
+          top: 50%;
+          transform: translateY(-50%);
+          position: relative;
+          height: fit-content;
+          .desktopBody#welcomeScreenMainDesktopSubtitle {
+            margin-top: 2em;
+          }
+          .desktopFillButton#welcomeScreenMainDesktopButtonExplore {
+            margin-top: 2em;
+          }
+        }
+      }
+      .image {
+        max-width: 100%;
+        margin-right: 8%;
+        margin-left: 4%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        max-height: 64%;
+      }
+    }
+  }
+}

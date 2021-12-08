@@ -1,0 +1,147 @@
+@import "../../utils/styles/globalStyle";
+
+.registrationScreenApp {
+  .mobile {
+    .divPoster {
+      background-color: $colorAmber;
+      .poster {
+        margin: 2em 8%;
+        width: 84%;
+      }
+    }
+    .divContent {
+      padding: 2em 8%;
+      box-sizing: border-box;
+      .divEditText {
+        margin-top: 1.32em;
+        input {
+          margin-top: .32em;
+          box-sizing: border-box;
+          padding: .64em 1.16em;
+          width: 100%;
+          resize: none;
+          background-color: rgba(0, 0, 0, .04);
+          border: none;
+          outline: none;
+        }
+        .divSelect {
+          background-color: rgba(0, 0, 0, .04);
+          margin-top: .32em;
+          padding-right: 1.16em;
+          box-sizing: border-box;
+          select {
+            box-sizing: border-box;
+            padding: .64em 1.16em;
+            background-color: transparent;
+            width: 100%;
+            resize: none;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+      .textOptional {
+        margin-top: .64em;
+        margin-left: 1.16em;
+      }
+      .divButton {
+        display: flex;
+        margin-top: 2em;
+        .mobileFillButton {
+          width: 100%;
+          text-align: center;
+        }
+        .divider {
+          flex: 1;
+        }
+      }
+    }
+  }
+  .desktop {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    .divLeft {
+      background-color: $colorCream;
+      flex: 1;
+      .divContent {
+        padding: 0 8%;
+        box-sizing: border-box;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        .divEditText {
+          margin-top: 2em;
+          input {
+            margin-top: .32em;
+            box-sizing: border-box;
+            padding: .64em 1.16em;
+            width: 100%;
+            resize: none;
+            background-color: rgba(0, 0, 0, .04);
+            border: none;
+            outline: none;
+          }
+          .divSelect {
+            background-color: rgba(0, 0, 0, .04);
+            margin-top: .32em;
+            padding-right: 1.16em;
+            box-sizing: border-box;
+            select {
+              box-sizing: border-box;
+              padding: .64em 1.16em;
+              background-color: transparent;
+              width: 100%;
+              resize: none;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+        .textOptional {
+          font-size: 1em;
+          margin-top: 1em;
+          margin-left: 1.32em;
+        }
+        .divButton {
+          margin-top: 2em;
+        }
+      }
+    }
+    .divRight {
+      padding: 0 4%;
+      box-sizing: border-box;
+      background-color: $colorAmber;
+      height: 100vh;
+      .divCenter {
+        box-sizing: border-box;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        .divPoster {
+          height: 64vh;
+          object-fit: contain;
+          .poster {
+            height: 100%;
+          }
+        }
+        .divPowered {
+          margin-top: 2em;
+          display: flex;
+          .divider {
+            flex: 1;
+          }
+          .poweredItem {
+            margin-left: .64em;
+            &:first-child {
+              margin-left: 0;
+            }
+            .image {
+              height: 3.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

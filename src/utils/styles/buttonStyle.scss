@@ -1,0 +1,90 @@
+@import "../../utils/styles/globalStyle";
+
+.mobileFillButton {
+  padding: .864em 1.32em;
+  font-size: .864em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  user-select: none;
+  color: white;
+  width: fit-content;
+  background-color: $colorDarkGreen;
+  box-sizing: border-box;
+  border: .16em solid $colorDarkGreen;
+  transition: background-color 250ms linear,
+  color 250ms linear;
+  &:hover {
+    border: .16em solid $colorDarkGreen;
+    background-color: rgba(0, 0, 0, 0);
+    padding: .864em 1.32em;
+    font-size: .864em;
+    box-sizing: border-box;
+    color: $colorDarkGreen;
+    transition: background-color 250ms linear,
+    color 250ms linear;
+  }
+}
+.desktopFillButton {
+  padding: 1em 2em;
+  font-size: .932em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  user-select: none;
+  color: white;
+  width: fit-content;
+  background-color: $colorDarkGreen;
+  box-sizing: border-box;
+  border: .16em solid $colorDarkGreen;
+  transition: background-color 250ms linear,
+  color 250ms linear;
+  &:hover {
+    border: .16em solid $colorDarkGreen;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1em 2em;
+    font-size: .932em;
+    box-sizing: border-box;
+    color: $colorDarkGreen;
+    transition: background-color 250ms linear,
+    color 250ms linear;
+  }
+}
+.mobileOutlineButton {
+  position: relative;
+  z-index: 1;
+  padding: .864em 1.32em;
+  font-size: .864em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  user-select: none;
+  color: $colorDarkGreen;
+  width: fit-content;
+  border: .16em solid $colorDarkGreen;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 150ms linear,
+  color 150ms linear;
+  &:hover {
+    background-color: $colorDarkGreen;
+    color: white;
+    transition: background-color 150ms linear,
+    color 150ms linear;
+  }
+}
+.desktopOutlineButton {
+  padding: 1em 2em;
+  font-size: .932em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  user-select: none;
+  color: $colorDarkGreen;
+  width: fit-content;
+  border: .16em solid $colorDarkGreen;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 150ms linear,
+  color 150ms linear;
+  &:hover {
+    background-color: $colorDarkGreen;
+    color: white;
+    transition: background-color 150ms linear,
+    color 150ms linear;
+  }
+}

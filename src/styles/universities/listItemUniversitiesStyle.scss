@@ -1,0 +1,77 @@
+@import "../../utils/styles/globalStyle";
+@import "../../utils/styles/textStyle";
+@import "../../utils/styles/buttonStyle";
+
+.listItemUniversities {
+  .mobile {
+    .root {
+      margin: 1em 8%;
+      background-color: $colorCream;
+      transition: box-shadow 250ms linear;
+      &:hover {
+        transition: box-shadow 250ms linear;
+        box-shadow: 0 0 1em rgba(0, 0, 0, .08);
+      }
+      .divImageMobile {
+        width: 100%;
+        height: 12em;
+        .imageMobile {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+          height: 8em;
+          object-fit: contain;
+        }
+      }
+      .divContentMobile {
+        padding: 1em;
+        box-sizing: border-box;
+        .mobileBody {
+          margin-top: .64em;
+        }
+      }
+    }
+  }
+  .desktop {
+    .root {
+      margin: 1em 8%;
+      background-color: $colorCream;
+      display: flex;
+      transition: box-shadow 250ms linear;
+      &:hover {
+        transition: box-shadow 250ms linear;
+        box-shadow: 0 0 1em rgba(0, 0, 0, .08);
+      }
+      .leftSide {
+        margin-left: 2em;
+        width: 16em;
+        height: 16em;
+        flex: 1;
+        .imageDesktop {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 16em;
+          object-fit: contain;
+          height: 8em;
+        }
+      }
+      .rightSide {
+        .content {
+          padding: 0 2em;
+          box-sizing: border-box;
+          transform: translateY(-50%);
+          top: 50%;
+          position: relative;
+          .desktopBody {
+            margin-top: .64em;
+          }
+          .desktopOutlineButton {
+            margin-top: 1em;
+          }
+        }
+      }
+    }
+  }
+}

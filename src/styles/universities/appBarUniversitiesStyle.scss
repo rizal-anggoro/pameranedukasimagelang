@@ -1,0 +1,87 @@
+@import "../../utils/styles/globalStyle";
+
+.appBarUniversities {
+  .mobile {
+    .root {
+      z-index: 2;
+      top: 0;
+      background-color: white;
+      position: fixed;
+      box-shadow: 0 0 1em rgba(0, 0, 0, .08);
+      display: flex;
+      width: 100%;
+      height: $desktopAppBarHeight;
+      .editTextSearch {
+        flex: 1;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        font-size: 1em;
+        padding: 0 8%;
+        box-sizing: border-box;
+      }
+      .divIconSearch {
+        margin-right: 6%;
+        .iconSearch {
+          top: 50%;
+          transform: translateY(-50%);
+          position: relative;
+          fill: rgba(0, 0, 0, .8);
+          &:hover {
+            fill: rgba(0, 0, 0, .5);
+          }
+        }
+      }
+    }
+  }
+  .desktop {
+    .root {
+      z-index: 2;
+      top: 0;
+      background-color: white;
+      position: fixed;
+      box-shadow: 0 0 1em rgba(0, 0, 0, .08);
+      display: flex;
+      width: 100%;
+      height: $desktopAppBarHeight;
+      .editTextSearch {
+        flex: 1;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        font-size: 1em;
+        padding: 0 4%;
+        box-sizing: border-box;
+      }
+      .divButtonSearch {
+        margin-right: 4%;
+        .buttonSearch {
+          top: 50%;
+          transform: translateY(-50%);
+          position: relative;
+          padding: 1em 2em;
+          font-size: .932em;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          user-select: none;
+          color: $colorDarkGreen;
+          width: fit-content;
+          border: .16em solid $colorDarkGreen;
+          background-color: rgba(0, 0, 0, 0);
+          transition: background-color 150ms linear,
+          color 150ms linear;
+          &:hover {
+            background-color: $colorDarkGreen;
+            color: white;
+            transition: background-color 150ms linear,
+            color 150ms linear;
+          }
+        }
+      }
+    }
+  }
+}

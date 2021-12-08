@@ -1,0 +1,197 @@
+@import "../../utils/styles/globalStyle";
+
+.zoomScreenMain {
+  .mobile {
+    padding: 0 0 3.2em;
+    box-sizing: border-box;
+    .divTitle {
+      position: relative;
+      overflow: hidden;
+      .mobileTextBackground#tryOutScreenMainMobileTextBackground {
+        margin-left: -16%;
+        position: absolute;
+        user-select: none;
+      }
+      .textContent {
+        left: 8%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-4%);
+      }
+    }
+    .mobileSubtitle {
+      margin: 2em 8% 1em;
+    }
+    .rootTable {
+      width: 100%;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .divTable {
+        margin: 0 8% 1.2em;
+        display: inline-block;
+        flex: 1;
+        width: 72em;
+        box-shadow: 0 0 1em rgba(0, 0, 0, .04);
+        .header {
+          .col {
+            padding: .64em 1em;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: $colorDarkGreen;
+            .mobileBody {
+              color: white;
+            }
+          }
+        }
+        .content {
+          .odd {
+            background-color: $colorCream;
+          }
+          .listItem {
+            .row {
+              display: flex;
+              .col0, .col1, .col2, .col3 {
+                text-align: center;
+                padding: .64em 1em;
+              }
+              .col0 {
+                background-color: $colorCream;
+                flex: .32;
+                border-right: 1px solid $colorDarkGreen;
+              }
+              .col1, .col2, .col3 {
+                flex: 1;
+              }
+            }
+            .divider {
+              width: 100%;
+              height: 1px;
+              background-color: rgba($colorDarkGreen, 1);
+            }
+          }
+        }
+        .divButton {
+          background-color: $colorCream;
+          display: flex;
+          .col0, .col1, .col2, .col3 {
+            text-align: center;
+            padding: 1em;
+          }
+          .col0 {
+            background-color: $colorCream;
+            flex-direction: column;
+            flex: .32;
+            border-right: 1px solid $colorDarkGreen;
+            display: flex;
+            .textDivider {
+              flex: 1;
+            }
+            p {
+              font-weight: 500;
+            }
+          }
+          .col1, .col2, .col3 {
+            display: flex;
+            .buttonDivider {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .desktop {
+    padding: 0 0 4em;
+    box-sizing: border-box;
+    .textBackground {
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      #tryOutScreenMainDesktopTextBackground {
+        right: 0;
+        position: absolute;
+      }
+      .desktopHeading {
+        left: 8%;
+        right: 8%;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-16%);
+      }
+    }
+    .desktopSubtitle {
+      margin: 2em 8% 1em;
+    }
+    .divTable {
+      box-shadow: 0 0 1em rgba(0, 0, 0, .04);
+      margin: 0 4% 2em;
+      .header {
+        .col {
+          padding: .64em;
+          box-sizing: border-box;
+          text-align: center;
+          background-color: $colorDarkGreen;
+          .desktopBody {
+            color: white;
+          }
+        }
+      }
+      .content {
+        .odd {
+          background-color: $colorCream;
+        }
+        .listItem {
+          .row {
+            display: flex;
+            .col0, .col1, .col2, .col3 {
+              text-align: center;
+              padding: .64em 1em;
+            }
+            .col0 {
+              background-color: $colorCream;
+              flex: .32;
+              border-right: 1px solid $colorDarkGreen;
+            }
+            .col1, .col2, .col3 {
+              flex: 1;
+            }
+          }
+          .divider {
+            width: 100%;
+            height: 1px;
+            background-color: rgba($colorDarkGreen, 1);
+          }
+        }
+      }
+      .divButton {
+        background-color: $colorCream;
+        display: flex;
+        .col0, .col1, .col2, .col3 {
+          text-align: center;
+          padding: 1em;
+        }
+        .col0 {
+          background-color: $colorCream;
+          flex-direction: column;
+          flex: .32;
+          border-right: 1px solid $colorDarkGreen;
+          display: flex;
+          .textDivider {
+            flex: 1;
+          }
+          p {
+            font-weight: 500;
+          }
+        }
+        .col1, .col2, .col3 {
+          display: flex;
+          .buttonDivider {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
